@@ -32,21 +32,11 @@ We will perform a 3-step procedure
 •	Open cmd line in windows, nevigate to "C:\Program Files\Oracle\VirtualBox" & run following cmd at cmd prompt <br />
 VBoxManage natnetwork add --netname linux-nat --network "192.168.122.0/24" --enable --dhcp off <br />
 •	Run the cmd to check if network is created: <br />
-    C:\Program Files\Oracle\VirtualBox>VBoxManage natnetwork list
-    NAT Networks:
 
-    Name:         linux-nat
-    Network:      192.168.122.0/24
-    Gateway:      192.168.122.1
-    DHCP Server:  No
-    IPv6:         No
-    IPv6 Prefix:  fd17:625c:f037:2::/64
-    IPv6 Default: No
-    Enabled:      Yes
 
-    1 network found
+  ![image](https://user-images.githubusercontent.com/94822541/167827866-f7cfd019-66a8-4ef4-abba-8ca3951a3692.png)
 
-    C:\Program Files\Oracle\VirtualBox>
+
 
 •	for the VM, goto settings in vritual box by right-click -> settings, choose Network, and select "NAT Network" from the drop-down list. Make sure that the correct NAT network appears in "Name," linux-nat in our case. <br />
 •	Open the "Advanced" option there, and make sure that the "Cable Connected" is checked. <br />
