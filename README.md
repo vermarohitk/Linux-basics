@@ -1,4 +1,4 @@
-Setting Up a Lab
+# Setting Up a Lab
 
 This is a basic tutorial to setup a baseline environment to bringup fedrora linux in virtual box.
 
