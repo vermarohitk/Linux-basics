@@ -43,16 +43,16 @@ VBoxManage natnetwork add --netname linux-nat --network "192.168.122.0/24" --ena
 •	Next set the static IP as DHCP is off for this network. <br />
 •	Run the virtula machine in the VBox <br />
 •	Edit your networking parameters. Create the file name from the interface name: <br />
-    o	sudo vi /etc/sysconfig/network-scripts/ifcfg-<if name>
-    	TYPE=Ethernet
-    	BOOTPROTO=static
-    	IPADDR=192.168.122.x (where x is 11,12,13 for k8s-a, k8s-b, k8s-c, 10 for k8s-control, 100 for the host)
-    	PREFIX=24
-    	ONBOOT=yes
-    	GATEWAY=192.168.122.1
-    	DNS1=8.8.8.8
-•	restart VM  <br />
-•	If all goes well, you should be able to ping 8.8.8.8 or any external webserver <br />
+•	sudo vi /etc/sysconfig/network-scripts/ifcfg-<if name><br />
+ -	TYPE=Ethernet<br />
+ -	BOOTPROTO=static<br />
+ -  IPADDR=192.168.122.x (where x is 11,12,13 for k8s-a, k8s-b, k8s-c, 10 for k8s-control, 100 for the host)<br />
+ -	PREFIX=24<br />
+ -	ONBOOT=yes<br />
+ -	GATEWAY=192.168.122.1<br />
+ -	DNS1=8.8.8.8<br />
+*	restart VM  <br />
+*	If all goes well, you should be able to ping 8.8.8.8 or any external webserver <br />
   
   
   ![image](https://user-images.githubusercontent.com/94822541/167825942-d74d8f64-505e-408b-9bbe-ddbd40445cbb.png)
