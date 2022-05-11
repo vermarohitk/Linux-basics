@@ -60,4 +60,6 @@ VBoxManage natnetwork add --netname linux-nat --network "192.168.122.0/24" --ena
     	DNS1=8.8.8.8
 o	restart VM 
 •	If all goes well, you should be able to ping 8.8.8.8 or any external webserver
+  
+  
   ![image](https://user-images.githubusercontent.com/94822541/167825942-d74d8f64-505e-408b-9bbe-ddbd40445cbb.png)
