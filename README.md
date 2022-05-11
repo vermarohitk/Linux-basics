@@ -10,6 +10,7 @@ We will perform a 3-step procedure
 
 
 Step-1
+
 1. Setup a virtual box
   Install (or upgrade) VirtualBox (https://www.virtualbox.org/wiki/Downloads)
   I am using 6.1.34 for this installation with out extension packages.
@@ -17,6 +18,7 @@ Step-1
 
 
 Step-2
+
 2. Download and Install the Virtual Machine Template
   Download Fedora 35 (server, VirtualBox, vdi file) from osboxes.org https://www.osboxes.org/fedora/
   user: root pass: osboxes.org (given in the info tab)
@@ -25,6 +27,7 @@ Step-2
   Use your downloaded VDI file as the system disk.
   
 Step-3
+
 3. Configure NAT Networking as explained "https://www.virtualbox.org/manual/ch06.html#network_nat_service"
 •	Open cmd line in windows, nevigate to "C:\Program Files\Oracle\VirtualBox" & run following cmd at cmd prompt
 VBoxManage natnetwork add --netname linux-nat --network "192.168.122.0/24" --enable --dhcp off
@@ -58,7 +61,7 @@ VBoxManage natnetwork add --netname linux-nat --network "192.168.122.0/24" --ena
     	ONBOOT=yes
     	GATEWAY=192.168.122.1
     	DNS1=8.8.8.8
-o	restart VM 
+•	restart VM 
 •	If all goes well, you should be able to ping 8.8.8.8 or any external webserver
   
   
