@@ -1,16 +1,13 @@
 # Setting Up a Lab
 
-This is a basic tutorial to setup a baseline environment to bringup fedrora linux in virtual box.
+This tutorial helps you to bringup a fedrora linux virtual machines in virtual box & setup a baseline environment for it.
 
-We will perform a 3-step procedure
+We follow a 3-step procedure here
 
 1. Setting up a virtual box on windows PC/laptop (we are using windows 10 enterprise with version 20H2)<br />
 2. Download and install a virtual machine template<br />
-
-![image](https://user-images.githubusercontent.com/94822541/217563233-20096d13-ad10-41db-9e15-6d4575f673bb.png)
-
-
 3. Setting Up a Network<br />
+
 
 
 ## Step-1
@@ -18,7 +15,7 @@ We will perform a 3-step procedure
 1. Setup a virtual box
 •	Install (or upgrade) VirtualBox (https://www.virtualbox.org/wiki/Downloads)<br />
   (7.0.6 is used for this installation with out extension packages)<br />
-  ![image](https://user-images.githubusercontent.com/94822541/217563384-013e407c-00e2-4eba-8dfe-bbc29368f6a1.png)
+![image](https://user-images.githubusercontent.com/94822541/217563233-20096d13-ad10-41db-9e15-6d4575f673bb.png)
 
 •	Add the following directory into your path: C:\Program Files\Oracle\VirtualBox so that you can run VirtualBox cli commands.<br />
 
@@ -27,6 +24,8 @@ We will perform a 3-step procedure
 
 2. Download and Install the Virtual Machine Template <br />
 •	Download Fedora 35 (server, VirtualBox, vdi file) from osboxes.org https://www.osboxes.org/fedora/ <br />
+![image](https://user-images.githubusercontent.com/94822541/217563384-013e407c-00e2-4eba-8dfe-bbc29368f6a1.png)
+
 •	user: root pass: osboxes.org (given in the info tab) <br />
 •	Unzip (I use 7z) the downloaded file - this is a virtual disk image (VDI) file. <br />
 •	VirtualBox: Create a Linux (RedHat 64G) machine (as a template) <br />
@@ -41,7 +40,6 @@ VBoxManage natnetwork add --netname linux-nat --network "192.168.122.0/24" --ena
 
 
   ![image](https://user-images.githubusercontent.com/94822541/167827866-f7cfd019-66a8-4ef4-abba-8ca3951a3692.png)
-
 
 
 •	for the VM, goto settings in vritual box by right-click -> settings, choose Network, and select "NAT Network" from the drop-down list. Make sure that the correct NAT network appears in "Name," linux-nat in our case. <br />
