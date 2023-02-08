@@ -6,6 +6,10 @@ We will perform a 3-step procedure
 
 1. Setting up a virtual box on windows PC/laptop (we are using windows 10 enterprise with version 20H2)<br />
 2. Download and install a virtual machine template<br />
+
+![image](https://user-images.githubusercontent.com/94822541/217563233-20096d13-ad10-41db-9e15-6d4575f673bb.png)
+
+
 3. Setting Up a Network<br />
 
 
@@ -14,6 +18,8 @@ We will perform a 3-step procedure
 1. Setup a virtual box
 •	Install (or upgrade) VirtualBox (https://www.virtualbox.org/wiki/Downloads)<br />
   (7.0.6 is used for this installation with out extension packages)<br />
+  ![image](https://user-images.githubusercontent.com/94822541/217563384-013e407c-00e2-4eba-8dfe-bbc29368f6a1.png)
+
 •	Add the following directory into your path: C:\Program Files\Oracle\VirtualBox so that you can run VirtualBox cli commands.<br />
 
 
