@@ -13,7 +13,7 @@ We will perform a 3-step procedure
 
 1. Setup a virtual box
 •	Install (or upgrade) VirtualBox (https://www.virtualbox.org/wiki/Downloads)<br />
-  (6.1.34 is used for this installation with out extension packages)<br />
+  (7.0.6 is used for this installation with out extension packages)<br />
 •	Add the following directory into your path: C:\Program Files\Oracle\VirtualBox so that you can run VirtualBox cli commands.<br />
 
 
